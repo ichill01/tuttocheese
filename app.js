@@ -658,7 +658,20 @@ window.openProductModal = openProductModal;
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
+  // Enable scroll animations only after JS is ready (prevents blank page)
+  document.body.classList.add('js-ready');
+
   initTheme();
   setupEventListeners();
   renderProducts();
+
+  // Immediately animate any scroll-animate elements already in viewport
+  setTimeout(() => {
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('animated');
+      }
+    });
+  }, 50);
 });

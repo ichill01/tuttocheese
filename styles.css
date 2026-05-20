@@ -86,13 +86,23 @@ body {
   box-shadow: 0 0 30px rgba(224, 40, 38, 0.25);
 }
 
-/* Scroll-based animation delays */
+/* Scroll-based animation delays — only active when JS has loaded */
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(30px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Only hide elements when JS is confirmed ready (body gets js-ready class) */
+.js-ready .scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-ready .scroll-animate.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fallback: always show if already animated */
 .scroll-animate.animated {
   opacity: 1;
   transform: translateY(0);
