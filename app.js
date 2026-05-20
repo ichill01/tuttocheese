@@ -303,6 +303,7 @@ const products = [
     halal: true,
     badge: "Certified Halal"
   }
+];
 
 // 2. Application State
 let currentFilter = 'all';
