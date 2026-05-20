@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- White circle background so logo is always legible on any navbar colour -->
+  <circle cx="150" cy="150" r="142" fill="white"/>
+
+  <!-- Outer double ring -->
+  <circle cx="150" cy="150" r="138" fill="none" stroke="#C9A84C" stroke-width="3.5"/>
+  <circle cx="150" cy="150" r="131" fill="none" stroke="#C9A84C" stroke-width="1"/>
+
+  <!-- Dotted decorative inner ring -->
+  <circle cx="150" cy="150" r="126" fill="none" stroke="#C9A84C" stroke-width="1" stroke-dasharray="2.5 4"/>
+
+  <!-- ===== Jar / Bottle Icon ===== -->
+  <!-- Jar lid top cap -->
+  <rect x="132" y="58" width="36" height="7" rx="3" fill="#C9A84C"/>
+  <!-- Jar lid band -->
+  <rect x="128" y="65" width="44" height="9" rx="2" fill="#C9A84C"/>
+  <!-- Jar body outline -->
+  <rect x="125" y="74" width="50" height="52" rx="6" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+  <!-- Jar label lines -->
+  <line x1="134" y1="90" x2="166" y2="90" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+  <line x1="134" y1="100" x2="166" y2="100" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+  <line x1="134" y1="110" x2="166" y2="110" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ===== Top ornamental swirl above TUTTO ===== -->
+  <path d="M 102,147 Q 110,136 120,140 Q 128,143 120,150" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="102" cy="147" r="2.5" fill="#C9A84C"/>
+  <path d="M 198,147 Q 190,136 180,140 Q 172,143 180,150" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="198" cy="147" r="2.5" fill="#C9A84C"/>
+
+  <!-- Small diamond center ornament above TUTTO -->
+  <polygon points="150,143 154,148 150,153 146,148" fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Horizontal rule lines flanking TUTTO -->
+  <line x1="46" y1="166" x2="105" y2="166" stroke="#C9A84C" stroke-width="1.5"/>
+  <line x1="195" y1="166" x2="254" y2="166" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- ===== TUTTO Text ===== -->
+  <text
+    x="150"
+    y="189"
+    text-anchor="middle"
+    font-family="Trajan Pro, Cinzel, Palatino Linotype, Times New Roman, serif"
+    font-size="48"
+    font-weight="900"
+    letter-spacing="5"
+    fill="#1a1205"
+  >TUTTO</text>
+
+  <!-- ===== Bottom ornamental swirls below TUTTO ===== -->
+  <path d="M 102,196 Q 110,207 120,203 Q 128,200 120,193" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="102" cy="196" r="2.5" fill="#C9A84C"/>
+  <path d="M 198,196 Q 190,207 180,203 Q 172,200 180,193" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="198" cy="196" r="2.5" fill="#C9A84C"/>
+
+  <!-- ===== CHEESE Text ===== -->
+  <text
+    x="150"
+    y="221"
+    text-anchor="middle"
+    font-family="Trajan Pro, Cinzel, Palatino Linotype, Times New Roman, serif"
+    font-size="20"
+    font-weight="700"
+    letter-spacing="9"
+    fill="#C9A84C"
+  >CHEESE</text>
+
+  <!-- ===== Bottom decorative flourish ===== -->
+  <path d="M 125,236 Q 137,244 150,241 Q 163,244 175,236" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 135,238 Q 143,245 150,243 Q 157,245 165,238" fill="none" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="150" cy="242" r="2" fill="#C9A84C"/>
+
+</svg>

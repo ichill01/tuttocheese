@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutto Cheese Company | 100% Canadian Artisan Cheese</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Tutto Cheese is an artisanal cheese company using traditional methods and innovative milk blends, made locally with 100% Canadian DFO milk. No powders, fillers, or preservatives.">
+  <meta name="keywords" content="tutto cheese, canadian artisan cheese, DFO milk, asiago wheel, goat cheese, ricotta, handmade cheese brampton">
+  <meta name="author" content="Tutto Cheese Company">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tuttogourmet.com/brands/tutto-cheese-company">
+  <meta property="og:title" content="Tutto Cheese Company | Premium Italian Cheeses">
+  <meta property="og:description" content="Discover our hand-imported portfolio of Sardo goat cheeses, classic Asiago, creamy Friulano, and fresh double-cream Fior Di Crema.">
+  <meta property="og:image" content="assets/hero.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Tutto Cheese Company | Premium Italian Cheeses">
+  <meta property="twitter:description" content="Discover our hand-imported portfolio of Sardo goat cheeses, classic Asiago, creamy Friulano, and fresh double-cream Fior Di Crema.">
+  <meta property="twitter:image" content="assets/hero.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdfcf7',
+              100: '#fbf9ee',
+              200: '#f5eece',
+              300: '#efe3af',
+              400: '#e3cd71',
+              500: '#d7b733',
+              600: '#c2a52e',
+              700: '#a28a26',
+              800: '#816e1f',
+              900: '#695a19',
+              amber: '#d97706',
+              accent: '#e02826',
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-zinc-50 text-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+  <!-- Header Section (Top Bar + Main Navigation) -->
+  <header class="sticky top-0 z-40 w-full transition-all">
+    <!-- Top Announcement Bar -->
+    <div class="bg-zinc-900 dark:bg-black text-white text-[11px] py-2 px-4 border-b border-zinc-800">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Toll Free: <a href="tel:18558088886" class="hover:text-amber-400 transition-colors font-medium">1-855-808-8886</a>
+          </span>
+          <span class="max-sm:hidden flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            55 Exchange Dr, Unit 1. Brampton, ON
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://cdn.prod.website-files.com/5e67b0187bb11e0f3b9b2bad/650dd29e6ac61c0f27dd5708_TGFCatalogue-2023SEPT-compressed.pdf" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-1">
+            <span>View Catalog PDF</span>
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="glass-nav py-3.5 px-4 w-full">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        
+        <!-- Official Tutto Cheese Logo (local) -->
+        <a href="#" class="flex items-center gap-2 group">
+          <img 
+            src="assets/logo.svg" 
+            alt="Tutto Cheese Company Logo" 
+            class="h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+          <a href="#" class="text-amber-600 dark:text-amber-400">Home</a>
+          <a href="#story" class="text-zinc-600 dark:text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors">Our Story</a>
+          <a href="#catalog" class="text-zinc-600 dark:text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors">Artisan Catalog</a>
+          <a href="#contact" class="text-zinc-600 dark:text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Controls: Theme and Contact trigger -->
+        <div class="flex items-center gap-3">
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" class="p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/40 dark:bg-zinc-900/40 hover:bg-zinc-100 dark:hover:bg-zinc-850 active:scale-95 transition-all" aria-label="Toggle visual theme">
+            <!-- Icon replaced dynamically by app.js -->
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+          </button>
+
+          <!-- Primary CTA (Contact Form Scroll) -->
+          <a href="#contact" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-zinc-950 hover:bg-zinc-900 text-white dark:bg-white dark:hover:bg-zinc-100 dark:text-zinc-950 font-bold text-xs uppercase tracking-wider transition-all hover:scale-[1.02] active:scale-98 shadow-sm">
+            Distributor Inquiry
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden py-12 md:py-24 border-b border-zinc-100 dark:border-zinc-900/80">
+    <!-- Ambient gold background light glow (Dark mode only) -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none hidden dark:block"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      
+      <!-- Typography Block -->
+      <div class="lg:col-span-6 flex flex-col items-start text-left scroll-animate">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-500/10 text-amber-600 dark:text-amber-400 mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping"></span>
+          100% Canadian Milk &bull; Made by Hand
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-black text-zinc-950 dark:text-white leading-[1.1] mb-6">
+          Artisan <span class="italic font-normal text-amber-500">Cheese</span> Crafted the Traditional Way.
+        </h1>
+        <p class="text-base sm:text-lg text-zinc-500 dark:text-zinc-400 font-light mb-8 max-w-xl">
+          Tutto Cheese uses traditional methods and innovative milk blends to create an inspiring new line of unique, premium cheeses — made locally using 100% Canadian milk, with no powders, fillers, or preservatives.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <a href="#catalog" class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold text-sm shadow-lg shadow-amber-500/10 hover:shadow-xl hover:shadow-amber-500/20 active:scale-95 transition-all text-center">
+            Browse Wholesale Catalog
+          </a>
+          <a href="#story" class="inline-flex items-center justify-center px-7 py-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 font-bold text-sm active:scale-95 transition-all text-center text-zinc-800 dark:text-zinc-200">
+            Our Heritage Story
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-12 pt-8 border-t border-zinc-200/60 dark:border-zinc-800/80 w-full grid grid-cols-3 gap-4">
+          <div>
+            <span class="block text-2xl font-extrabold text-zinc-950 dark:text-white font-serif leading-none mb-1">100%</span>
+            <span class="text-xs text-zinc-500 dark:text-zinc-400 font-light">Canadian DFO Milk</span>
+          </div>
+          <div>
+            <span class="block text-2xl font-extrabold text-zinc-950 dark:text-white font-serif leading-none mb-1">0</span>
+            <span class="text-xs text-zinc-500 dark:text-zinc-400 font-light">Fillers or Preservatives</span>
+          </div>
+          <div>
+            <span class="block text-2xl font-extrabold text-zinc-950 dark:text-white font-serif leading-none mb-1">Hand</span>
+            <span class="text-xs text-zinc-500 dark:text-zinc-400 font-light">Made by Hand Always</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Mockup Block -->
+      <div class="lg:col-span-6 flex justify-center relative scroll-animate" style="animation-delay: 150ms">
+        <div class="relative w-full max-w-lg aspect-[5/4] sm:aspect-square md:aspect-[6/5] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-zinc-200/50 dark:border-zinc-800/80 zoom-container">
+          <img src="assets/hero.png" alt="Tutto Cheese Board Showcase" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-8">
+            <span class="text-[10px] font-extrabold text-amber-400 uppercase tracking-widest mb-1.5">Handcrafted in Canada</span>
+            <h3 class="text-white font-serif text-xl font-bold">The Tutto Cheese Collection</h3>
+            <p class="text-zinc-300 text-xs font-light mt-1">Featuring Capranese, aged Asiago, Friulano, Ricotta, Fior Di Crema &amp; more — all made from premium DFO milk.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section id="story" class="py-16 md:py-24 bg-white dark:bg-zinc-900/20 border-b border-zinc-100 dark:border-zinc-900/60">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 scroll-animate">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-3 block">Our Story</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-black text-zinc-950 dark:text-white mb-4">About Tutto Cheese Company</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        <!-- Image showcase -->
+        <div class="lg:col-span-5 relative scroll-animate">
+          <div class="relative aspect-square max-w-md mx-auto rounded-3xl overflow-hidden border border-zinc-150 dark:border-zinc-800 shadow-xl group">
+            <img id="story-image" src="assets/hard.png" alt="Tutto Cheese artisan handcrafted cheeses" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-black/45 backdrop-blur-[2px] transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center p-8 text-center text-white">
+              <p class="text-sm italic">"The goal is not to replicate the taste of classic cheeses, but to explore the boundaries of what more they can become!"</p>
+            </div>
+          </div>
+
+          <!-- Certification Badges -->
+          <div class="mt-8 grid grid-cols-3 gap-3">
+            <!-- Made in Canada -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 shadow-sm">
+              <div class="w-10 h-10 mb-2 flex items-center justify-center">
+                <svg viewBox="0 0 40 40" class="w-10 h-10" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#C9A84C" opacity="0.12"/>
+                  <path d="M20 8 L24 14 L31 14 L26 19 L28 26 L20 22 L12 26 L14 19 L9 14 L16 14 Z" fill="#C9A84C"/>
+                </svg>
+              </div>
+              <span class="text-[10px] font-black text-zinc-800 dark:text-zinc-200 uppercase leading-tight">Made in Canada</span>
+              <span class="text-[9px] text-zinc-400 dark:text-zinc-500 leading-tight mt-0.5">Fabriqué au Canada</span>
+            </div>
+            <!-- No Modified Milk -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 shadow-sm">
+              <div class="w-10 h-10 mb-2 flex items-center justify-center">
+                <svg viewBox="0 0 40 40" class="w-10 h-10" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#C9A84C" opacity="0.12"/>
+                  <circle cx="20" cy="20" r="10" stroke="#C9A84C" stroke-width="2"/>
+                  <path d="M14 26 L26 14" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="text-[10px] font-black text-zinc-800 dark:text-zinc-200 uppercase leading-tight">No Modified Milk</span>
+              <span class="text-[9px] text-zinc-400 dark:text-zinc-500 leading-tight mt-0.5">Sans Substances Laitières Modifiées</span>
+            </div>
+            <!-- Made by Hand -->
+            <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 shadow-sm">
+              <div class="w-10 h-10 mb-2 flex items-center justify-center">
+                <svg viewBox="0 0 40 40" class="w-10 h-10" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#C9A84C" opacity="0.12"/>
+                  <path d="M16 28 C16 28 12 24 12 18 L12 14 C12 13 13 12 14 13 L14 18" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M14 16 C14 15 15 14 16 15 L16 20" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M16 17 C16 16 17 15 18 16 L18 21" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M18 17 C18 16 19 15 20 16 L20 21" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M20 18 L26 18 C27 18 28 19 28 20 L26 28 L16 28" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="text-[10px] font-black text-zinc-800 dark:text-zinc-200 uppercase leading-tight">Made by Hand</span>
+              <span class="text-[9px] text-zinc-400 dark:text-zinc-500 leading-tight mt-0.5">Fabriqué à la Main</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Block -->
+        <div class="lg:col-span-7 flex flex-col justify-start space-y-8 scroll-animate" style="animation-delay: 150ms">
+          
+          <!-- Company Description -->
+          <div>
+            <p class="text-base sm:text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
+              Tutto Cheese is an artisanal cheese company that uses traditional methods and innovative milk blends to create an inspiring new line of unique, premium cheeses. At Tutto Cheese, the goal is not to replicate the taste of classic cheeses, but to explore the boundaries of what more they can become!
+            </p>
+            <p class="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Made locally using <strong class="font-bold text-zinc-900 dark:text-white">100% Canadian milk</strong>, without the use of milk powders, fillers, or preservatives. Our branded artisanal cheeses are now available at select retailers! For all inquiries, including food-service customization, please contact us via phone or email.
+            </p>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-zinc-200 dark:border-zinc-800"></div>
+
+          <!-- Martin Melendez Quote -->
+          <div class="bg-zinc-950 dark:bg-zinc-900 rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+            <!-- Decorative quote mark -->
+            <svg class="absolute top-4 right-4 w-16 h-16 text-amber-500/10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="text-sm sm:text-base text-zinc-300 leading-relaxed italic mb-4">
+              "I want to bring the passion I have for cheese to others by bringing back what I believe has been lost over time. The finest cheeses can only be made by hand, the cheese maker must always be close to the process to ensure the highest quality at every stage."
+            </p>
+            <p class="text-sm text-zinc-400 leading-relaxed italic mb-6">
+              "Trained as master cheese maker from a very young age, I use traditional methods that have been passed down for centuries because it is the only true way to make artisan cheese. Traditional cheese making is about passion and my passion is to create new flavours for people to enjoy and open their minds to new possibilities."
+            </p>
+            <div class="flex items-center justify-between flex-wrap gap-4">
+              <div>
+                <span class="block text-amber-400 font-black text-sm tracking-wider uppercase">&ndash; Martin Melendez</span>
+                <span class="text-zinc-500 text-xs italic">Master Cheese Maker</span>
+              </div>
+              <!-- Dairy Farmers of Canada badge -->
+              <div class="flex items-center gap-2 bg-white rounded-xl px-3 py-2">
+                <svg viewBox="0 0 60 40" class="h-8 w-auto" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="60" height="40" rx="4" fill="#003DA5"/>
+                  <text x="5" y="14" font-family="Arial" font-size="6" font-weight="bold" fill="white">DAIRY</text>
+                  <text x="5" y="22" font-family="Arial" font-size="6" font-weight="bold" fill="white">FARMERS</text>
+                  <text x="5" y="30" font-family="Arial" font-size="6" font-weight="bold" fill="white">OF CANADA</text>
+                  <circle cx="50" cy="20" r="7" fill="white" opacity="0.2"/>
+                  <text x="47" y="23" font-family="Arial" font-size="8" font-weight="bold" fill="white">🐄</text>
+                </svg>
+                <div>
+                  <span class="text-[9px] font-black text-blue-900 uppercase block leading-tight">Dairy Farmers</span>
+                  <span class="text-[9px] font-bold text-blue-700 uppercase block leading-tight">of Canada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>n>
+
+  <!-- Interactive Brand Catalog -->
+  <section id="catalog" class="py-16 md:py-24 border-b border-zinc-100 dark:border-zinc-900/60">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <!-- Catalog Header & Search -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 scroll-animate">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-3 block">Live Catalog</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-black text-zinc-950 dark:text-white">
+            The Artisan Portfolio
+          </h2>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 font-light mt-2 max-w-xl">
+            Browse our full wholesale registry of handcrafted Canadian cheeses, made from 100% DFO milk with no fillers or preservatives. Click on any cheese card to view distributor details.
+          </p>
+        </div>
+
+        <!-- Modern Search Box -->
+        <div class="relative w-full lg:w-80 max-w-md">
+          <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-zinc-400">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search by name, origin, notes..." 
+            class="w-full pl-9 pr-8 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all text-zinc-800 dark:text-zinc-200"
+          />
+          <button id="search-clear" class="absolute inset-y-0 right-3 flex items-center text-zinc-400 hover:text-zinc-650 dark:hover:text-zinc-200 hidden">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Navigation Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 border-b border-zinc-150 dark:border-zinc-800/80 -mx-4 px-4 scrollbar-hide scroll-animate" style="animation-delay: 50ms">
+        <button data-filter="all" class="filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-amber-500 text-zinc-950 shadow-sm active:scale-95 transition-all whitespace-nowrap">
+          All Products
+        </button>
+        <button data-filter="tutto" class="filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-white text-zinc-700 border border-zinc-200/85 hover:border-zinc-350 dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-800/80 active:scale-95 transition-all whitespace-nowrap">
+          Tutto Cheese
+        </button>
+        <button data-filter="el-senor" class="filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-white text-zinc-700 border border-zinc-200/85 hover:border-zinc-350 dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-800/80 active:scale-95 transition-all whitespace-nowrap">
+          El Señor Quesero
+        </button>
+        <button data-filter="taaza" class="filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-white text-zinc-700 border border-zinc-200/85 hover:border-zinc-350 dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-800/80 active:scale-95 transition-all whitespace-nowrap">
+          Taaza
+        </button>
+        <button data-filter="tazij" class="filter-btn px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl bg-white text-zinc-700 border border-zinc-200/85 hover:border-zinc-350 dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-800/80 active:scale-95 transition-all whitespace-nowrap">
+          Tazij (Halal)
+        </button>
+      </div>
+
+      <!-- Dynamic Catalog Grid -->
+      <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 min-h-[400px]">
+        <!-- Rendered dynamically by app.js -->
+        <div class="col-span-full py-24 text-center">
+          <div class="inline-block animate-pulse w-8 h-8 rounded-full border-4 border-amber-500 border-t-transparent animate-spin"></div>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-4">Loading catalog...</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-16 md:py-24 bg-zinc-100 dark:bg-zinc-900/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <!-- Info column -->
+        <div class="lg:col-span-5 flex flex-col justify-between scroll-animate">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-3 block">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-black text-zinc-950 dark:text-white">
+              Partner with Tutto Cheese.
+            </h2>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 font-light mt-4 leading-relaxed">
+              We offer bespoke inventory solutions for supermarket chains, specialty grocers, cheese mongers, and catering wholesalers across North America. Submit an inquiry to discuss custom packing, order sheets, or shipping logistics.
+            </p>
+
+            <!-- Details List -->
+            <div class="space-y-6 mt-10">
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-white dark:bg-zinc-900 rounded-xl shadow-sm text-amber-500 flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">Corporate HQ</h4>
+                  <p class="text-sm font-semibold text-zinc-900 dark:text-white">55 Exchange Drive, Unit 1</p>
+                  <p class="text-sm text-zinc-500 dark:text-zinc-400 font-light">Brampton, ON, L6S 0E5, Canada</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-white dark:bg-zinc-900 rounded-xl shadow-sm text-amber-500 flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">Direct Call</h4>
+                  <p class="text-sm font-semibold text-zinc-900 dark:text-white">
+                    Phone: <a href="tel:9058468886" class="hover:text-amber-500 transition-colors font-bold">905-846-8886</a>
+                  </p>
+                  <p class="text-sm text-zinc-500 dark:text-zinc-400 font-light">
+                    Toll Free: <a href="tel:18558088886" class="hover:text-amber-500 transition-colors">1-855-808-8886</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social media icons -->
+          <div class="mt-12 max-lg:mb-6">
+            <h4 class="text-xs font-bold text-zinc-450 dark:text-zinc-500 uppercase tracking-wider mb-3">Connect Online</h4>
+            <div class="flex items-center gap-3">
+              <a href="https://www.youtube.com/channel/UC0-fw1fmNm54njrSZJ8TppQ" target="_blank" class="p-2.5 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-red-600 dark:text-zinc-400 dark:hover:text-red-500 active:scale-95 transition-all" aria-label="Youtube Channel">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.388.511a3.003 3.003 0 0 0-2.11 2.107C0 8.053 0 12 0 12s0 3.947.502 5.837a3.003 3.003 0 0 0 2.11 2.107C4.495 20.455 12 20.455 12 20.455s7.505 0 9.388-.511a3.003 3.003 0 0 0 2.11-2.107C24 15.947 24 12 24 12s0-3.947-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/tuttogourmetfoods/" target="_blank" class="p-2.5 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-pink-600 dark:text-zinc-400 dark:hover:text-pink-500 active:scale-95 transition-all" aria-label="Instagram Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://twitter.com/tuttogourmet_" target="_blank" class="p-2.5 bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-sky-500 dark:text-zinc-400 dark:hover:text-sky-400 active:scale-95 transition-all" aria-label="Twitter Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form column -->
+        <div class="lg:col-span-7 scroll-animate" style="animation-delay: 150ms">
+          <div class="glass-card p-8 rounded-3xl shadow-sm border">
+            <h3 class="text-lg font-bold text-zinc-950 dark:text-white mb-6">Send an Inquiry</h3>
+            <form id="contact-form" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contact-name" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">Full Name</label>
+                  <input type="text" id="contact-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 text-sm text-zinc-800 dark:text-zinc-200" />
+                </div>
+                <div>
+                  <label for="contact-company" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">Business Name</label>
+                  <input type="text" id="contact-company" required placeholder="Gourmet Foods Ltd" class="w-full px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 text-sm text-zinc-800 dark:text-zinc-200" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">Email Address</label>
+                  <input type="email" id="contact-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 text-sm text-zinc-800 dark:text-zinc-200" />
+                </div>
+                <div>
+                  <label for="contact-phone" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">Phone Number</label>
+                  <input type="tel" id="contact-phone" placeholder="905-555-0199" class="w-full px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 text-sm text-zinc-800 dark:text-zinc-200" />
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">Message / Inquiry Details</label>
+                <textarea id="contact-message" rows="4" required placeholder="Tell us about your distribution needs or products of interest..." class="w-full px-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 text-sm text-zinc-800 dark:text-zinc-200 resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold text-sm shadow-md shadow-amber-500/10 hover:shadow-lg hover:shadow-amber-500/20 active:scale-98 transition-all uppercase tracking-wider">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="mt-auto bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-6 flex flex-col items-center md:items-start text-center md:text-left">
+        <a href="#" class="inline-block mb-4">
+          <img 
+            src="assets/logo.svg" 
+            alt="Tutto Cheese Company Logo" 
+            class="h-12 w-auto object-contain"
+          />
+        </a>
+        <p class="text-xs text-zinc-500 font-light max-w-sm mx-auto md:mx-0">
+          Tutto Cheese Company. Artisan cheese crafted by hand using 100% Canadian DFO milk — no powders, fillers, or preservatives. Available at select retailers across Canada.
+        </p>
+      </div>
+
+      <div class="md:col-span-6 text-center md:text-right text-xs">
+        <div class="flex flex-wrap justify-center md:justify-end gap-6 mb-4">
+          <a href="#" class="hover:text-amber-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-amber-400 transition-colors">Terms of Sale</a>
+          <a href="https://www.tuttogourmet.com" class="hover:text-amber-400 transition-colors">Tutto Gourmet Foods Main</a>
+        </div>
+        <p class="text-zinc-600 font-light">&copy; 2026 Tutto Cheese Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PRODUCT DETAIL OVERLAY MODAL -->
+  <div id="product-modal" class="fixed inset-0 z-50 bg-black/65 backdrop-blur-md flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="modal-container w-full max-w-3xl bg-white dark:bg-zinc-900 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden transform scale-95 translate-y-4 transition-all duration-300 max-h-[90vh] flex flex-col">
+      <!-- Sticky modal header -->
+      <div class="p-6 border-b border-zinc-150 dark:border-zinc-800 flex justify-between items-center flex-shrink-0">
+        <span id="modal-cat" class="px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-extrabold text-[10px] uppercase tracking-widest">GOAT</span>
+        <button id="close-product-modal" class="p-1.5 text-zinc-400 hover:text-zinc-650 dark:hover:text-white rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable content -->
+      <div class="overflow-y-auto p-6 md:p-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Image -->
+          <div class="md:col-span-5 aspect-square rounded-2xl overflow-hidden bg-zinc-55 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/80">
+            <img id="modal-img" src="assets/goat.png" alt="Cheese Product details" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- Product Details -->
+          <div class="md:col-span-7 space-y-6">
+            <div>
+              <h3 id="modal-title" class="text-xl md:text-2xl font-serif font-black text-zinc-950 dark:text-white leading-snug">Cheese Title</h3>
+              <div class="mt-3 flex items-center gap-2 flex-wrap">
+                <span class="text-xs px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400 font-medium">Origin: <strong id="modal-origin" class="font-bold text-zinc-900 dark:text-zinc-200">Sardinia</strong></span>
+                <span class="text-xs px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400 font-medium">Texture: <strong id="modal-texture" class="font-bold text-zinc-900 dark:text-zinc-200">Semi-hard</strong></span>
+                <span class="text-xs px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400 font-medium">Aging: <strong id="modal-aging" class="font-bold text-zinc-900 dark:text-zinc-200">6 Months</strong></span>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">Description</h4>
+                <p id="modal-desc" class="text-sm font-light text-zinc-600 dark:text-zinc-300 leading-relaxed">Detailed cheese description...</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">Tasting Notes</h4>
+                <p id="modal-notes" class="text-sm font-light text-zinc-600 dark:text-zinc-300 italic">Robust, complex earthy tone...</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">Recommended Pairings</h4>
+                <p id="modal-pairings" class="text-sm font-light text-zinc-600 dark:text-zinc-300">Honey dripper, Cabernet Sauvignon...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add to order panel (Footer) -->
+      <div class="p-6 border-t border-zinc-150 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 flex flex-row items-center justify-between gap-4 flex-shrink-0">
+        <div>
+          <span class="text-[10px] text-zinc-400 dark:text-zinc-500 block uppercase tracking-wider font-semibold">Standard Pack Size</span>
+          <span id="modal-packaging" class="text-base font-extrabold text-zinc-950 dark:text-white">1 x 5kg Wheel</span>
+        </div>
+        
+        <div class="flex items-center gap-3">
+          <button id="modal-inquire-btn" class="h-11 px-8 rounded-xl bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold text-xs uppercase tracking-wider shadow-sm transition-all active:scale-95">
+            Request Pricing & Specs
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center px-4 py-3 rounded-lg shadow-xl border transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-none">
+    <div class="flex items-center gap-2">
+      <span id="toast-message" class="text-sm font-bold">Toast message goes here</span>
+    </div>
+  </div>
+
+  <!-- Application Script defer -->
+  <script src="app.js" defer></script>
+</body>
+</html>

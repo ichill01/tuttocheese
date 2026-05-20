@@ -1,0 +1,31 @@
+# Node
+node_modules/
+npm-debug.log*
+.npm
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build output
+dist/
+build/
+.next/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
